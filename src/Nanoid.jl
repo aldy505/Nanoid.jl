@@ -2,10 +2,9 @@ module Nanoid
 
 using Random
 
-# Write your package code here.
 const urlalphabet = "useandom-26T198340PX75pxJACKVERYMINDBUSHWOLF_GQZbfghjklqvwyzrict"
 
-rng = MersenneTwister()
+rng = Random.RandomDevice()
 
 function randomcharacter(from::String)::Char
     return rand(rng, from)
